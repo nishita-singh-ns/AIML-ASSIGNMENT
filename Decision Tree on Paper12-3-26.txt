@@ -1,0 +1,9 @@
+                Weather
+               /      \
+           Sunny      Rainy
+          /               \
+     Humidity           Wind
+      /   \             /   \
+   High  Normal      Strong  Weak
+    |       |          |      |
+   No      Yes        No     Yes

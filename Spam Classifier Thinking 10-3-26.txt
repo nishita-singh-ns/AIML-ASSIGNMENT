@@ -1,0 +1,37 @@
+Features Used
+
+The system can use the following features to detect spam messages:
+
+Presence of promotional words such as free, win, offer, prize
+
+Number of links in the message
+
+Message length
+
+Excessive use of capital letters
+
+Sender email or phone number pattern
+
+Data Needed
+
+To train the system, the following data is required:
+
+A dataset of emails or messages
+
+Labels indicating whether the message is spam or not spam
+
+Text content of each message
+
+Sender information and message metadata
+
+Possible Mistakes
+
+The spam detection system may make some errors such as:
+
+Important emails being classified as spam
+
+Spam messages being classified as normal messages
+
+New types of spam not detected by the system
+
+Incorrect classification due to insufficient training data

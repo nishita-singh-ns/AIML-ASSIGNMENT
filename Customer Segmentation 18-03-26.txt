@@ -1,0 +1,20 @@
+### CODE CELL ###
+from sklearn.cluster import KMeans
+import pandas as pd
+
+data = pd.DataFrame({
+    "Age":[19,21,20,23,31,22,35,40,50,45],
+    "Income":[15,16,17,18,40,42,60,65,80,90],
+    "Spending":[39,81,6,77,40,76,6,94,3,72]
+})
+
+model = KMeans(n_clusters=3)
+model.fit(data)
+
+data["Cluster"] = model.labels_
+
+print(data)
+
+### CODE CELL ###
+
+

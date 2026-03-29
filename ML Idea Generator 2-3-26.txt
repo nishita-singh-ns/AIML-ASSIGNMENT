@@ -1,0 +1,21 @@
+assignment Name: ML Idea Generator
+
+College Attendance Predictor
+
+Input → Attendance %, study hours
+Output → Predicted final marks
+
+Healthcare Disease Risk
+
+Input → Age, weight, blood pressure
+Output → Disease risk level
+
+Shopping Recommendation System
+
+Input → Previous purchases, search history
+Output → Suggested products
+
+College Placement Predictor
+
+Input → CGPA, skills, internships
+Output → Placement probability

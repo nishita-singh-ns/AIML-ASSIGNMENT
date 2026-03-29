@@ -1,0 +1,25 @@
+### CODE CELL ###
+import pandas as pd
+
+data = pd.DataFrame({
+    "Name": ["Nishita", "Rahul", "Nishita", "Anu", None],
+    "Marks": [85, 90, 85, None, 75],
+    "Department": ["cse", "ECE", "cse", "MECH", "cse"]
+})
+
+print("Original Dataset:\n")
+print(data)
+
+data["Marks"] = data["Marks"].fillna(data["Marks"].mean())
+data["Name"] = data["Name"].fillna("Unknown")
+
+data = data.drop_duplicates()
+
+data["Department"] = data["Department"].str.upper()
+
+print("\nCleaned Dataset:\n")
+print(data)
+
+### CODE CELL ###
+
+

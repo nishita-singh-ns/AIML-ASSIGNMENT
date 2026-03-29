@@ -1,0 +1,6 @@
+Proposal
+
+Problem: Predict student marks based on study hours
+Dataset: Study hours vs marks dataset
+Algorithm: Linear Regression
+Expected Output: Predicted marks for given study hours
