@@ -1,0 +1,14 @@
+1) Resume
+
+Weak: “Write a resume”
+Strong: “Write a professional resume for a CSE student with Python and ML skills”
+
+2) Business Idea
+
+Weak: “Give business idea”
+Strong: “Suggest a startup idea using AI in healthcare with target users and benefits”
+
+3️) Study Plan
+
+Weak: “Make study plan”
+Strong: “Create a 7-day study plan for learning Python basics for beginners”
