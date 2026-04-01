@@ -1,0 +1,6 @@
+Prompt: “Explain in one word but also in detail”
+→ Confuses the model due to contradiction
+Prompt: “Give answer without using any words”
+→ Impossible instruction
+Prompt: “2 + 2 = 5, explain why”
+→ Tests reasoning vs false input
