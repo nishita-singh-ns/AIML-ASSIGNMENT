@@ -1,0 +1,26 @@
+import pandas as pd
+
+df = pd.read_csv("students.csv")
+
+print("Original Data:\n", df)
+
+df["Average"] = (df["maths"] + df["science"] + df["english"]) / 3
+df["Total"] = df["maths"] + df["science"] + df["english"]
+
+print("\nData with Average:\n", df)
+
+top3 = df.sort_values(by="Total", ascending=False).head(3)
+print("\nTop 3 Students:\n", top3)
+
+dept_avg = df.groupby("dept")[["maths", "science", "english"]].mean()
+print("\nDepartment-wise Average Marks:\n", dept_avg)
+
+above75 = df[
+    (df["maths"] > 75) &
+    (df["science"] > 75) &
+    (df["english"] > 75)
+]
+print("\nStudents scoring above 75 in all subjects:\n", above75)
+
+missing_values = df.isnull().sum()
+print("\nMissing Values:\n", missing_values)

@@ -1,0 +1,39 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Create dataset
+data = {
+    "month": ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct"],
+    "revenue": [20000,22000,25000,24000,27000,30000,32000,31000,33000,35000],
+    "marketing_spent": [5000,6000,7000,6500,7200,8000,8500,8300,8700,9000],
+    "profit": [8000,9000,10000,9500,11000,13000,14000,13500,15000,16000]
+}
+
+df = pd.DataFrame(data)
+
+df.to_csv("sales_data.csv", index=False)
+
+print("Dataset:\n", df)
+
+plt.figure()
+plt.plot(df["month"], df["revenue"])
+plt.title("Revenue Over Months")
+plt.xlabel("Month")
+plt.ylabel("Revenue")
+plt.show()
+plt.figure()
+plt.scatter(df["marketing_spent"], df["profit"])
+plt.title("Marketing vs Profit")
+plt.xlabel("Marketing Spent")
+plt.ylabel("Profit")
+plt.show()
+corr = df[["revenue","marketing_spent","profit"]].corr()
+print("\nCorrelation Matrix:\n", corr)
+
+
+Revenue shows a steady increasing trend, indicating continuous business growth.
+Minor drops in some months suggest seasonal or external factors affecting performance.
+There is a strong positive relationship between marketing spending and profit.
+Higher marketing investment leads to higher profit generation, proving effectiveness.
+Correlation between revenue, marketing, and profit is very high, showing all variables are closely connected.
+Overall, the business is stable, growing, and low risk, with good future potential.

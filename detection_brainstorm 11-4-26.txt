@@ -1,0 +1,5 @@
+Face recognition for security systems
+Object detection in self-driving cars
+Attendance system using face detection
+Surveillance systems for safety
+Medical image analysis

@@ -1,0 +1,5 @@
+Use a strong, unique password: A password like 'python123' is easy to guess. A strong password should be longer and include a mix of uppercase letters, lowercase letters, numbers, and symbols.
+
+Do not hardcode passwords: The correct password ('python123') is visible in the source code. A more secure method involves storing a hashed version of the password (a one-way encrypted version) and comparing the hash of the user's input to the stored hash. This way, even if someone sees the code, they won't know the actual password.
+
+Use a secure input method: For actual applications, you would use modules (like Python's getpass) that hide the characters typed by the user on the screen, preventing someone from looking over their shoulder.

@@ -1,0 +1,14 @@
+import numpy as np
+
+temps_list = [28, 32, 40, 37, 26, 38]
+
+temps = np.array(temps_list)
+
+print("Numpy Array:", temps)
+
+print("Maximum temperature:", np.max(temps))
+print("Minimum temperature:", np.min(temps))
+
+print("Average temperature:", np.mean(temps))
+
+print("Last three days temperature:", temps[-3:])

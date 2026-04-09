@@ -1,0 +1,26 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.cluster import KMeans
+
+data = {
+    "age": [19, 21, 20, 23, 31, 35, 33, 37, 45, 52, 23, 27, 29, 41, 50],
+    "annual_income": [15, 16, 17, 18, 40, 42, 43, 45, 60, 65, 20, 25, 30, 55, 70],
+    "spending_score": [39, 81, 6, 77, 40, 76, 6, 94, 3, 14, 72, 60, 65, 20, 10]
+}
+
+df = pd.DataFrame(data)
+
+X = df[["annual_income", "spending_score"]]
+
+kmeans = KMeans(n_clusters=4, random_state=0)
+df["cluster"] = kmeans.fit_predict(X)
+
+plt.figure()
+plt.scatter(df["annual_income"], df["spending_score"], c=df["cluster"])
+plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], marker='X', s=200)
+plt.xlabel("Annual Income")
+plt.ylabel("Spending Score")
+plt.title("Customer Segmentation")
+plt.show()
+
+print("Cluster Centers:\n", kmeans.cluster_centers_)

@@ -1,0 +1,13 @@
+cart = ["apple", "banana", "milk", "bread"]
+
+print("Original Cart:", cart)
+
+item = input("Enter item to remove: ")
+
+if item in cart:
+    cart.remove(item)
+    print(item, "removed successfully.")
+else:
+    print("Item not found.")
+
+print("Remaining items in cart:", cart)

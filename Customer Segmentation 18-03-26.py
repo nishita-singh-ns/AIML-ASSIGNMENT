@@ -1,4 +1,3 @@
-### CODE CELL ###
 from sklearn.cluster import KMeans
 import pandas as pd
 
@@ -15,6 +14,5 @@ data["Cluster"] = model.labels_
 
 print(data)
 
-### CODE CELL ###
 
 
